@@ -1,0 +1,105 @@
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unattended Installatie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/fonts.css"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Logo" style="height: 50px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary text-white ms-lg-2" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-primary mb-4">Unattended Installatie Project</h1>
+                <p>Een van de andere projecten die ik heb gedaan, was de onbewaakte installatie van Windows 10 en 11. Ik heb echt van dit project genoten omdat het vergelijkbaar was met WDS, maar in plaats daarvan gebruikte ik een opstartbare USB-stick. Het is heel handig als je Windows snel en efficiënt wilt installeren zonder tussenkomst van de gebruiker.</p>
+            </div>
+        </div>
+    
+       
+        <section>
+            <h2 class="text-primary mb-3">Wat is een Unattended Installatie?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/unattended.jpg" alt="Unattended Installation" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-6">
+                    <p>Een unattended installatie is een geautomatiseerd proces waarbij Windows 10 of 11 wordt geïnstalleerd zonder dat de gebruiker handmatig interactie hoeft te hebben. Dit wordt mogelijk gemaakt door een vooraf geconfigureerd unattend.xml bestand, dat de installatie-instellingen bepaalt, zoals de partities, taal, en gebruikersaccounts. Het voordeel van een unattended installatie is dat deze snel en efficiënt kan worden uitgevoerd, vooral bij het installeren op meerdere machines.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-primary mb-3">Configureren van het Unattend.xml Bestand</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/xtml.png" alt="Configuring Unattend.xml" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-6">
+                    <p>De eerste stap in het maken van een unattended installatie is het configureren van het unattend.xml bestand. Dit bestand bevat alle instellingen die je wilt toepassen tijdens de installatie, zoals de taalvoorkeuren, accountinstellingen, en de schijfindeling. Het bestand wordt geplaatst in de hoofdmap van de opstartbare USB-stick, zodat het automatisch wordt opgepakt tijdens de installatie. Het bestand zorgt ervoor dat de installatie zonder tussenkomst van de gebruiker wordt uitgevoerd, wat vooral handig is voor massale implementaties van Windows 10 en 11.</p>
+                </div>
+            </div>
+        </section>
+         <section>
+            <h2 class="text-primary mb-3">De USB Bootable Drive Instellen</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Na het voorbereiden van het unattend.xml bestand, is de volgende stap het maken van een opstartbare USB-stick. Dit kan eenvoudig worden gedaan met tools zoals de Windows Media Creation Tool of Rufus. Deze tools helpen bij het formatteren van de USB-stick en het kopiëren van de benodigde Windows-installatiebestanden. Zorg ervoor dat het unattend.xml bestand correct in de root van de USB-stick is geplaatst, zodat het automatisch wordt gedetecteerd wanneer je opstart vanaf de USB-stick.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Met behulp van de diskpart tool in Windows kun je de USB-stick voorbereiden door de juiste partities aan te maken en het opstartbare besturingssysteem te installeren. Zodra de USB-stick is ingesteld, kun je de doelcomputer opstarten vanaf de USB-stick en zal het installatieproces automatisch beginnen.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-primary mb-3">Automatische Installatie met Unattended Setup</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Wanneer je opstart vanaf de USB-stick, zal het Windows-installatieprogramma automatisch beginnen met de installatie, waarbij het unattend.xml bestand de configuratie-instellingen toepast. Dit betekent dat de schijven automatisch worden gepartitioneerd, de taal en tijdzone worden ingesteld, en de benodigde stuurprogramma's en updates worden geïnstalleerd. Het installatieproces verloopt zonder verdere tussenkomst van de gebruiker, wat de efficiëntie van het proces aanzienlijk verhoogt.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Door deze geautomatiseerde aanpak kun je snel en foutloos Windows 10 of 11 installeren op meerdere computers, wat vooral nuttig is voor IT-beheerders die in grote omgevingen werken. Het bespaart tijd, vermindert menselijke fouten en zorgt voor consistentie in de configuratie van alle geïnstalleerde systemen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-primary mb-3">Conclusie</h2>
+            <p>Het creëren van een opstartbare USB-stick met een unattended installatie voor Windows 10 en 11 is een krachtige manier om Windows snel en automatisch te installeren op meerdere machines. Door het configureren van het unattend.xml bestand en het instellen van de juiste tools, kun je de installatie volledig automatiseren en de efficiëntie verhogen. Dit project was een geweldige kans om mijn kennis van Windows-implementaties en automatisering verder te ontwikkelen.</p>
+        </section>
+    </main>
+    <footer class="container text-center py-3 mt-5">
+        <p class="text-white">&copy; 2024 Yonathan | All rights reserved</p>
+        <p class="text-white">Copyright not intended</p>
+        <p>
+            <a href="https://www.linkedin.com/in/yonathan-bruk-4aa32832b/" class="text-white" target="_blank">LinkedIn</a> | 
+            <a href="mailto:yonathanbruk744@gmail.com" class="text-white">E-mail yonathanbruk744@gmail.com</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
